@@ -1,3 +1,4 @@
+
 import requests  # Для выполнения HTTP-запросов
 from tkinter import *  # Для создания графического интерфейса
 from tkinter import ttk  # Для использования виджетов с улучшенным дизайном
@@ -81,7 +82,7 @@ def reset_selection():
 window = Tk()  # Инициализация главного окна
 window.title("Курс крипто валют <<Меняла>>")  # Установка заголовка окна
 window.geometry("400x360")  # Установка размера окна
-window.iconbitmap(default="i.ico")
+
 
 Label(text="Криптовалюта:").pack(padx=10, pady=5)  # Создаем метку для выбора криптовалюты
 base_combobox = ttk.Combobox(values=list(currencies.keys()), state="readonly")  # Создаем комбобокс для криптовалют
@@ -102,4 +103,5 @@ t_label.pack(padx=10, pady=5)  # Размещаем метку в окне
 Button(text="Получить курс обмена", command=exchange).pack(padx=10, pady=10)  # Кнопка для получения курса обмена
 Button(text="Сбросить выбор", command=reset_selection).pack(padx=10, pady=10)  # Кнопка для сброса выбора
 
-window.mainloop()  # Запуск главного цикла обработки событий
+window.mainloop()  # Запуск главного цикла обработки событи
+

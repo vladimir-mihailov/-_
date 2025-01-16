@@ -82,8 +82,8 @@ window.title("Курс криптовалют <<Меняла>>")
 window.geometry("400x360")
 
 # Проверка наличия иконки
-if os.path.exists("i.ico"):
-    window.iconbitmap(default="i.ico")
+if os.path.exists("Ubuntu/home/vladimir/PythonProject_ Курс_валют/i.ico"):
+    window.iconbitmap(default="Ubuntu/home/vladimir/PythonProject_ Курс_валют/i.ico")
 
 Label(text="Криптовалюта:").pack(padx=10, pady=5)
 base_combobox = ttk.Combobox(values=list(currencies.keys()), state="readonly")
